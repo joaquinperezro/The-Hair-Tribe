@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-mono: "Instrument Serif", ui-serif, Georgia, serif;
+  
+  --color-brand-black: #44372F; /* Rich chocolate brown */
+  --color-brand-white: #F8F5F0; /* Warm cream */
+  --color-brand-gold: #BCAE9A; /* Earthy taupe / beige */
+  --color-brand-sage: #A4B59D; /* Soft sage green */
+}
+
+* {
+  cursor: none !important;
+}
+
+body {
+  background-color: var(--color-brand-white);
+  color: var(--color-brand-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-white); 
+  border-left: 1px solid var(--color-brand-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-black); 
+}
